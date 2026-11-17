@@ -1,0 +1,25 @@
+# Normalize line endings in the repository; check out with the platform's default.
+* text=auto
+
+*.cpp text diff=cpp
+*.hpp text diff=cpp
+*.md text diff=markdown
+*.json text
+*.cmake text
+CMakeLists.txt text
+
+# Shell scripts keep LF; Visual Studio files keep CRLF, as Visual Studio writes them.
+*.sh text eol=lf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+
+# Test inputs and expected outputs whose exact bytes matter (CRLF lines,
+# missing final newlines): never convert them.
+tests/data/** -text
+examples/*.txt -text
+examples/*.patch -text
+
+# Binary files
+*.png binary
+*.ico binary

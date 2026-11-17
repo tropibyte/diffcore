@@ -1,0 +1,17 @@
+Release checklist
+=================
+
+1. Update the version number in CMakeLists.txt.
+2. Update CHANGELOG.md with the release date.
+3. Build the dev, release, asan and mingw presets.
+4. Run the test suite on every preset.
+5. Run tools/compare_gnu.sh.
+6. Build the Visual Studio project in all four configurations.
+7. Tag the release.
+8. Push the tag.
+
+Notes
+-----
+
+Keep the changelog entries short.
+Mention breaking changes first.

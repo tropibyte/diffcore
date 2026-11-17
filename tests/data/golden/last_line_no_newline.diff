@@ -1,0 +1,10 @@
+--- a
++++ b
+@@ -2,4 +2,4 @@
+ beta
+ gamma
+ delta
+-epsilon
+\ No newline at end of file
++EPSILON
+\ No newline at end of file

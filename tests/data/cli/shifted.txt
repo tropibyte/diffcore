@@ -1,0 +1,32 @@
+# managed by the release team
+# edit with care
+[server]
+host = example.org
+port = 8080
+timeout = 30
+retries = 3
+log_level = info
+
+[paths]
+root = /srv/app
+cache = /var/cache/app
+logs = /var/log/app
+tmp = /tmp/app
+
+[workers]
+count = 4
+queue = default
+max_jobs = 100
+backoff = linear
+
+[mail]
+smtp = mail.example.org
+from = noreply@example.org
+reply_to = support@example.org
+subject_prefix = [app]
+
+[features]
+search = on
+export = off
+beta = off
+audit = on

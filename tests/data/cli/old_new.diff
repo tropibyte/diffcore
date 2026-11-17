@@ -1,0 +1,21 @@
+--- a
++++ b
+@@ -1,7 +1,8 @@
+ [server]
+ host = example.org
+ port = 8080
+-timeout = 30
++timeout = 60
++keepalive = on
+ retries = 3
+ log_level = info
+ 
+@@ -20,7 +21,7 @@
+ [mail]
+ smtp = mail.example.org
+ from = noreply@example.org
+-reply_to = support@example.org
++reply_to = help@example.org
+ subject_prefix = [app]
+ 
+ [features]

@@ -1,0 +1,9 @@
+--- a
++++ b
+@@ -1,4 +1,4 @@
+-head
++HEAD
+ a
+ b
+ tail
+\ No newline at end of file
